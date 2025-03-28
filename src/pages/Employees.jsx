@@ -50,21 +50,14 @@ const Employees = () => {
   
   const token = useSelector((state) => state.auth.token);
 
-<<<<<<< HEAD
-  //  Fetch Employees
-=======
-  // Fetch Employees
->>>>>>> 5e7d817 (Improved)
   const fetchEmployees = async () => {
     setLoading(true);
     try {
       const res = await axios.get("https://hr-management-ln65.onrender.com/api/employees/",
-<<<<<<< HEAD
-        { headers: {Authorization: `Bearer ${token}` } }
+     
 
-=======
+
         { headers: { Authorization: `Bearer ${token}` } }
->>>>>>> 5e7d817 (Improved)
       );
       setEmployees(res.data || []);
     } catch (error) {
@@ -74,9 +67,8 @@ const Employees = () => {
     }
   };
 
-<<<<<<< HEAD
-  //  Save Employee (Add or Update)
-=======
+
+
   // Handle API errors
   const handleApiError = (error) => {
     if (error?.response?.status === 401) {
@@ -96,7 +88,6 @@ const Employees = () => {
   };
 
   // Save Employee (Add or Update)
->>>>>>> 5e7d817 (Improved)
   const handleSave = async () => {
     setApiLoading(true);
     try {

@@ -102,6 +102,7 @@ const Candidates = () => {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+    // eslint-disable-next-line no-unused-vars
     } catch (err) {
       Swal.fire({
         icon: "error",
