@@ -41,7 +41,7 @@ const Register = () => {
 
       if (response?.status === 201) {
         alert("Registration Successful! Please Login.");
-        navigate("/login");
+        navigate("/");
       }
     } catch (err) {
       setError(err.response?.data?.message || "Registration failed.");
