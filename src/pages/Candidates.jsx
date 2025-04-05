@@ -341,7 +341,7 @@ const Candidates = () => {
                       });
                       setShowModal(true);
                     }}
-                    disabled={apiLoading}
+                  
                   >
                     Edit
                   </button>
@@ -351,14 +351,14 @@ const Candidates = () => {
                       setEditingCandidate(cand);
                       setShowHireModal(true);
                     }}
-                    disabled={apiLoading}
+                 
                   >
                     Hire
                   </button>
                   <button
                     className="btn btn-danger btn-sm mx-1"
                     onClick={() => handleDelete(cand._id)}
-                    disabled={apiLoading}
+                  
                   >
                     Delete
                   </button>

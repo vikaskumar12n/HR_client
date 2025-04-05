@@ -224,14 +224,14 @@ const LeaveManagement = () => {
                       });
                       setShowModal(true);
                     }}
-                    disabled={apiLoading}
+                    // disabled={apiLoading}
                   >
                     Edit
                   </button>
                   <button 
                     className="btn btn-danger btn-sm mx-1" 
                     onClick={() => handleDelete(leave._id)}
-                    disabled={apiLoading}
+                    // disabled={apiLoading}
                   >
                     {apiLoading ? (
                       <span className="spinner-border spinner-border-sm" role="status"></span>

@@ -266,14 +266,14 @@ const Attendance = () => {
                         <button
                           className="btn btn-warning btn-sm mx-1"
                           onClick={() => openEditModal(record)}
-                          disabled={apiLoading}
+                          // disabled={apiLoading}
                         >
                           Edit
                         </button>
                         <button
                           className="btn btn-danger btn-sm mx-1"
                           onClick={() => handleDeleteAttendance(record._id)}
-                          disabled={apiLoading}
+                          // disabled={apiLoading}
                         >
                           {apiLoading ? (
                             <span className="spinner-border spinner-border-sm" role="status"></span>
